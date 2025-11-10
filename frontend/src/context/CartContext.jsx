@@ -50,7 +50,8 @@ export function CartProvider({ children }) {
       addToCart: (product) => dispatch({ type: 'ADD', payload: product }),
       removeOne: (id) => dispatch({ type: 'REMOVE_ONE', payload: id }),
       removeItem: (id) => dispatch({ type: 'REMOVE_ITEM', payload: id }),
-      clearCart: () => dispatch({ type: 'CLEAR' })
+      clearCart: () => dispatch({ type: 'CLEAR' }),
+      checkout: () => dispatch({ type: 'CLEAR' })
     }),
     [state.items, count, total]
   );

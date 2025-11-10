@@ -1,8 +1,10 @@
 import { useCart } from '../context/CartContext.jsx';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Cart() {
-  const { items, total, removeOne, removeItem, clearCart } = useCart();
+  const { items, total, removeOne, removeItem, clearCart, checkout } = useCart();
+  const navigate = useNavigate();
 
   if (items.length === 0) {
     return (
@@ -51,7 +53,15 @@ export default function Cart() {
             <button className="btn ghost" onClick={clearCart}>
               Clear Cart
             </button>
-            <button className="btn primary">Checkout</button>
+            <button
+              className="btn primary"
+              onClick={() => {
+                checkout();
+                navigate('/order-success');
+              }}
+            >
+              Checkout
+            </button>
           </div>
         </div>
       </div>
