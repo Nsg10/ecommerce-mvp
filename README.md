@@ -96,6 +96,9 @@ Deployment
 - Set CORS_ORIGIN on the backend to your production frontend URL.
 - Update BASE_URL in frontend/src/api.js or use Vite env var VITE_API_BASE for production API URL.
 
+<img width="1799" height="813" alt="Screenshot 2025-11-10 141652" src="https://github.com/user-attachments/assets/d743e9a9-e8f7-4f3d-b7f4-3d1a9df37ec1" />
+<img width="1682" height="675" alt="Screenshot 2025-11-10 141708" src="https://github.com/user-attachments/assets/f4e1bd15-c702-493f-975b-49639c9447d4" />
+<img width="1839" height="442" alt="Screenshot 2025-11-10 141725" src="https://github.com/user-attachments/assets/22ba7d3e-1075-442f-8883-9d0e5545ae84" />
 License
 MIT
 
